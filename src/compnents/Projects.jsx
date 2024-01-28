@@ -1,7 +1,169 @@
-import React from "react";
+import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { ProjectCard } from "./ProjectCard";
+import projImg1 from "../assets/img/Minimart-ecommerce.png";
+import projImg2 from "../assets/img/world wise.png";
+import projImg3 from "../assets/img/Faast pizza.png";
+import projImg4 from "../assets/img/spotify.png";
+import projImg5 from "../assets/img/Faast pizza.png";
+import projImg6 from "../assets/img/Faast pizza.png";
+import colorSharp2 from "../assets/img/color-sharp2.png";
+// import "animate.css";
+import TrackVisibility from "react-on-screen";
 
-const Projects = () => {
-	return <div></div>;
+export const Projects = () => {
+	const projects = [
+		{
+			title: "Minimart ecommerce",
+			description:
+				"Minimart e-commerce, built with ReactJS, Redux for state management, and styled using Reactstrap. Authentication is powered by Firebase, offering a smooth checkout process after creating an account.",
+			imgUrl: projImg1,
+			projUrl: "https://minimart-deployed-version.netlify.app/home",
+		},
+		{
+			title: "World Wise",
+			description:
+				"Simple web app that allows users to keep track of the places they've visited. Built to highlight routing, the react context API as well as the leaflet library.",
+			imgUrl: projImg2,
+			projUrl: "https://minimart-deployed-version.netlify.app/home",
+		},
+		{
+			title: "Fast-Pizza Co",
+			description:
+				"Fast Pizza Co. Leveraging the power of Redux and Tailwind. Simply enter your name, explore the menu, and smoothly navigate to the cart for a quick checkout. The backend generates a unique ID for easy order tracking, enhancing user convenience.",
+			imgUrl: projImg3,
+			projUrl: "https://minimart-deployed-version.netlify.app/home",
+		},
+		{
+			title: "Spotify Clone",
+			description:
+				"A fully functional Spotify Clone with React JS, Styled Components using Spotify API and Context API.",
+			imgUrl: projImg4,
+			projUrl: "https://minimart-deployed-version.netlify.app/home",
+		},
+		{
+			title: "Use Popcorn",
+			description: `This application allows users to discover and explore movies using the OMDB API. Users can search for movies,
+			view movie details, rate movies, and save them to a watchlist for future viewing.
+			`,
+			imgUrl: projImg5,
+			projUrl: "https://minimart-deployed-version.netlify.app/home",
+		},
+		{
+			title: "Disney+ Clone",
+			description: `A full-stack project construct a functional mini Disney+ simulation. and real-time database functionality is
+			achieved with Firestore.
+			`,
+			imgUrl: projImg6,
+			projUrl: "https://minimart-deployed-version.netlify.app/home",
+		},
+		{
+			title: "Al-Saif For Construction",
+			description: `A successfully launched and deployed freelancing project for Al-Saif Construction in Saudi Arabia.`,
+			imgUrl: projImg6,
+			projUrl: "https://minimart-deployed-version.netlify.app/home",
+		},
+		{
+			title: "HiLink for camping",
+			description: `A SEO-friendly landing page, scoring a perfect 100% SEO on the Lighthouse tool analytics.`,
+			imgUrl: projImg6,
+			projUrl: "https://minimart-deployed-version.netlify.app/home",
+		},
+		{
+			title: "Geaduation Project",
+			description: `Presenting car data and news, allowing users to create listings for used vehicles, with AI-based price prediction.`,
+			imgUrl: projImg6,
+			projUrl: "https://minimart-deployed-version.netlify.app/home",
+		},
+		{
+			title: "Udemy Clone",
+			description: `An app implementing the key features of Udemy.`,
+			imgUrl: projImg6,
+			projUrl: "https://minimart-deployed-version.netlify.app/home",
+		},
+	];
+
+	return (
+		<section className="project" id="projects">
+			<Container>
+				<Row>
+					<Col size={12}>
+						<TrackVisibility>
+							{({ isVisible }) => (
+								<div
+									className={
+										isVisible ? "animate__animated animate__fadeIn" : ""
+									}
+								>
+									<h2>Projects</h2>
+									<p>
+										Lorem Ipsum is simply dummy text of the printing and
+										typesetting industry. Lorem Ipsum has been the industry's
+										standard dummy text ever since the 1500s, when an unknown
+										printer took a galley of type and scrambled it to make a
+										type specimen book.
+									</p>
+									<Tab.Container id="projects-tabs" defaultActiveKey="first">
+										<Nav
+											variant="pills"
+											className="nav-pills mb-5 justify-content-center align-items-center"
+											id="pills-tab"
+										>
+											<Nav.Item>
+												<Nav.Link eventKey="first">Tab 1</Nav.Link>
+											</Nav.Item>
+											<Nav.Item>
+												<Nav.Link eventKey="second">Tab 2</Nav.Link>
+											</Nav.Item>
+											<Nav.Item>
+												<Nav.Link eventKey="third">Tab 3</Nav.Link>
+											</Nav.Item>
+										</Nav>
+										<Tab.Content
+											id="slideInUp"
+											className={
+												isVisible ? "animate__animated animate__slideInUp" : ""
+											}
+										>
+											<Tab.Pane eventKey="first">
+												<Row>
+													{projects
+														.map((project, index) => {
+															return <ProjectCard key={index} {...project} />;
+														})
+														.slice(0, 6)}
+												</Row>
+											</Tab.Pane>
+											<Tab.Pane eventKey="second">
+												<Row>
+													{projects
+														.map((project, index) => {
+															return <ProjectCard key={index} {...project} />;
+														})
+														.slice(6, 12)}
+												</Row>
+											</Tab.Pane>
+											<Tab.Pane eventKey="third">
+												<Row>
+													{projects
+														.map((project, index) => {
+															return <ProjectCard key={index} {...project} />;
+														})
+														.slice(12, 18)}
+												</Row>
+											</Tab.Pane>
+										</Tab.Content>
+									</Tab.Container>
+								</div>
+							)}
+						</TrackVisibility>
+					</Col>
+				</Row>
+			</Container>
+			<img
+				className="background-image-right"
+				src={colorSharp2}
+				alt="section"
+			></img>
+		</section>
+	);
 };
-
-export default Projects;

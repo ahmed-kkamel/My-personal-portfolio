@@ -1,13 +1,38 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
-import Carousel from "react-multi-carousel";
+import reactImg from "../assets/img/react.svg";
+import nextImg from "../assets/img/next-js.svg";
+import reduxImg from "../assets/img/redux.svg";
+import htmlImg from "../assets/img/html-1.svg";
+import cssImg from "../assets/img/css-3.svg";
+import javascriptImg from "../assets/img/javascript-1.svg";
+import tailwindcssImg from "../assets/img/tailwindcss.svg";
+import sassImg from "../assets/img/sass-1.svg";
+import bootstrapImg from "../assets/img/bootstrap-4.svg";
+import typeScriptImg from "../assets/img/typescript-2.svg";
+import pythonImg from "../assets/img/python-5.svg";
+import firebaseImg from "../assets/img/firebase-1.svg";
+import materialUiImg from "../assets/img/material-ui-1.svg";
+import githubImg from "../assets/img/git-icon.svg";
 import "react-multi-carousel/lib/styles.css";
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png";
+import Carousel from "react-multi-carousel";
 import { Col, Row, Container } from "react-bootstrap";
 const Skills = () => {
+	const skills = [
+		{ title: "React.js", imgUrl: reactImg },
+		{ title: "Next.js", imgUrl: nextImg },
+		{ title: "Redux", imgUrl: reduxImg },
+		{ title: "Html", imgUrl: htmlImg },
+		{ title: "Css", imgUrl: cssImg },
+		{ title: "Java Script", imgUrl: javascriptImg },
+		{ title: "Tailwind CSS", imgUrl: tailwindcssImg },
+		{ title: "SASS", imgUrl: sassImg },
+		{ title: "Bootstrap", imgUrl: bootstrapImg },
+		{ title: "TypeScript", imgUrl: typeScriptImg },
+		{ title: "Python", imgUrl: pythonImg },
+		{ title: "Firebase", imgUrl: firebaseImg },
+		{ title: "Material UI", imgUrl: materialUiImg },
+		{ title: "Git", imgUrl: githubImg },
+	];
 	const responsive = {
 		superLargeDesktop: {
 			// the naming can be any, depends on you.
@@ -45,28 +70,22 @@ const Skills = () => {
 								className="owl-carousel owl-theme skill-slider"
 								autoPlay={true}
 							>
-								<div className="item">
-									<img src={meter1} alt="Imadasasdge" />
-									<h5>Web Development</h5>
-								</div>
-								<div className="item">
-									<img src={meter2} alt="Imafasdge" />
-									<h5>Brand Identity</h5>
-								</div>
-								<div className="item">
-									<img src={meter3} alt="Imasdasage" />
-									<h5>Logo Design</h5>
-								</div>
-								<div className="item">
-									<img src={meter1} alt="Imadasge" />
-									<h5>Web Development</h5>
-								</div>
+								{skills.map((skill) => (
+									<div className="item">
+										<img src={skill.imgUrl} alt={skill.title} />
+										<h5>{skill.title}</h5>
+									</div>
+								))}
 							</Carousel>
 						</div>
 					</Col>
 				</Row>
 			</Container>
-			<img className="background-image-left" src={colorSharp} alt="Image" />
+			<img
+				className="background-image-left"
+				src={colorSharp}
+				alt="background"
+			/>
 		</section>
 	);
 };

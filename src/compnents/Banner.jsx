@@ -60,9 +60,10 @@ const Banner = () => {
 							{`Hi, i'm Ahmed a `}
 							<span className="wrap">{text}</span>
 							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-								adipisci aspernatur ab rem corrupti ea sunt labore veritatis
-								obcaecati sed.
+								Organized, self-motivated team player with a passion for
+								learning and adaptability. Skilled in React.js. Proficient in
+								CSS libraries like Bootstrap and Tailwind CSS, creating visually
+								appealing and responsive web applications.
 							</p>
 							<button
 								onClick={() => {
