@@ -5,7 +5,10 @@ import projImg2 from "../assets/img/world wise.png";
 import projImg3 from "../assets/img/Faast pizza.png";
 import projImg4 from "../assets/img/spotify.png";
 import projImg5 from "../assets/img/Faast pizza.png";
-import projImg6 from "../assets/img/Faast pizza.png";
+import projImg6 from "../assets/img/disneyImg.png";
+import projImg7 from "../assets/img/AlsaifImg.png";
+import projImg8 from "../assets/img/travelApp.png";
+import projImg9 from "../assets/img/travelApp.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 // import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -59,19 +62,19 @@ export const Projects = () => {
 		{
 			title: "Al-Saif For Construction",
 			description: `A successfully launched and deployed freelancing project for Al-Saif Construction in Saudi Arabia.`,
-			imgUrl: projImg6,
-			projUrl: "https://minimart-deployed-version.netlify.app/home",
+			imgUrl: projImg7,
+			projUrl: "https://www.alsaifbuild.com/",
 		},
 		{
 			title: "HiLink for camping",
 			description: `A SEO-friendly landing page, scoring a perfect 100% SEO on the Lighthouse tool analytics.`,
-			imgUrl: projImg6,
-			projUrl: "https://minimart-deployed-version.netlify.app/home",
+			imgUrl: projImg8,
+			projUrl: "https://hilink-camping.netlify.app/",
 		},
 		{
 			title: "Geaduation Project",
 			description: `Presenting car data and news, allowing users to create listings for used vehicles, with AI-based price prediction.`,
-			imgUrl: projImg6,
+			imgUrl: projImg9,
 			projUrl: "https://minimart-deployed-version.netlify.app/home",
 		},
 		{
