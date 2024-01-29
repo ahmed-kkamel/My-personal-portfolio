@@ -4,11 +4,15 @@ import projImg1 from "../assets/img/Minimart-ecommerce.png";
 import projImg2 from "../assets/img/world wise.png";
 import projImg3 from "../assets/img/Faast pizza.png";
 import projImg4 from "../assets/img/spotify.png";
-import projImg5 from "../assets/img/Faast pizza.png";
+import projImg5 from "../assets/img/use popcorn.png";
 import projImg6 from "../assets/img/disneyImg.png";
 import projImg7 from "../assets/img/AlsaifImg.png";
 import projImg8 from "../assets/img/travelApp.png";
-import projImg9 from "../assets/img/travelApp.png";
+import projImg9 from "../assets/img/GradProject.jpeg";
+import projImg10 from "../assets/img/udemy.png";
+import projImg11 from "../assets/img/kasper.png";
+import projImg12 from "../assets/img/atomicblog.png";
+import projImg13 from "../assets/img/Eat&split.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 // import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -23,25 +27,31 @@ export const Projects = () => {
 			projUrl: "https://minimart-deployed-version.netlify.app/home",
 		},
 		{
-			title: "World Wise",
-			description:
-				"Simple web app that allows users to keep track of the places they've visited. Built to highlight routing, the react context API as well as the leaflet library.",
-			imgUrl: projImg2,
-			projUrl: "https://minimart-deployed-version.netlify.app/home",
-		},
-		{
 			title: "Fast-Pizza Co",
 			description:
 				"Fast Pizza Co. Leveraging the power of Redux and Tailwind. Simply enter your name, explore the menu, and smoothly navigate to the cart for a quick checkout. The backend generates a unique ID for easy order tracking, enhancing user convenience.",
 			imgUrl: projImg3,
-			projUrl: "https://minimart-deployed-version.netlify.app/home",
+			projUrl: "https://fast-pizza-delivary.netlify.app/",
+		},
+		{
+			title: "Al-Saif For Construction",
+			description: `A successfully launched and deployed freelancing project for Al-Saif Construction in Saudi Arabia.`,
+			imgUrl: projImg7,
+			projUrl: "https://www.alsaifbuild.com/",
+		},
+		{
+			title: "World Wise",
+			description:
+				"Simple web app that allows users to keep track of the places they've visited. Built to highlight routing, the react context API as well as the leaflet library.",
+			imgUrl: projImg2,
+			projUrl: "https://github.com/ahmed-kkamel/World-Wise",
 		},
 		{
 			title: "Spotify Clone",
 			description:
 				"A fully functional Spotify Clone with React JS, Styled Components using Spotify API and Context API.",
 			imgUrl: projImg4,
-			projUrl: "https://minimart-deployed-version.netlify.app/home",
+			projUrl: "https://github.com/ahmed-kkamel/Spotify-Clone",
 		},
 		{
 			title: "Use Popcorn",
@@ -49,7 +59,7 @@ export const Projects = () => {
 			view movie details, rate movies, and save them to a watchlist for future viewing.
 			`,
 			imgUrl: projImg5,
-			projUrl: "https://minimart-deployed-version.netlify.app/home",
+			projUrl: "https://usepopcorn-omdb-api.netlify.app/",
 		},
 		{
 			title: "Disney+ Clone",
@@ -57,13 +67,7 @@ export const Projects = () => {
 			achieved with Firestore.
 			`,
 			imgUrl: projImg6,
-			projUrl: "https://minimart-deployed-version.netlify.app/home",
-		},
-		{
-			title: "Al-Saif For Construction",
-			description: `A successfully launched and deployed freelancing project for Al-Saif Construction in Saudi Arabia.`,
-			imgUrl: projImg7,
-			projUrl: "https://www.alsaifbuild.com/",
+			projUrl: "https://disneyplus-clone-app.netlify.app/home",
 		},
 		{
 			title: "HiLink for camping",
@@ -75,13 +79,31 @@ export const Projects = () => {
 			title: "Geaduation Project",
 			description: `Presenting car data and news, allowing users to create listings for used vehicles, with AI-based price prediction.`,
 			imgUrl: projImg9,
-			projUrl: "https://minimart-deployed-version.netlify.app/home",
+			projUrl: "https://github.com/ahmed-kkamel/GraduationProject",
 		},
 		{
 			title: "Udemy Clone",
 			description: `An app implementing the key features of Udemy.`,
-			imgUrl: projImg6,
-			projUrl: "https://minimart-deployed-version.netlify.app/home",
+			imgUrl: projImg10,
+			projUrl: "https://udemy-clone-deployed-version.netlify.app/",
+		},
+		{
+			title: "The Atomic Blog",
+			description: `A React application that allows users to create, search, and manage blog posts. It features a dark mode toggle, search functionality, and the ability to add and clear posts. Users can also view an archive of posts and add them as new posts. `,
+			imgUrl: projImg12,
+			projUrl: "https://theatomicblog.netlify.app/",
+		},
+		{
+			title: "Eat & Split",
+			description: `React app to split bills, track shared expenses in a group of friends easily and find out "Who owes whom and how much?" with a transaction minimization algorithm.`,
+			imgUrl: projImg13,
+			projUrl: "https://eatandsplit-deployed.netlify.app/",
+		},
+		{
+			title: "Kasper",
+			description: `A simple template made with Html & Css`,
+			imgUrl: projImg11,
+			projUrl: "https://kaspercsstemplate.netlify.app/",
 		},
 	];
 
