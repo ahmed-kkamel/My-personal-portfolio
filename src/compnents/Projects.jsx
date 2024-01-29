@@ -13,6 +13,7 @@ import projImg10 from "../assets/img/udemy.png";
 import projImg11 from "../assets/img/kasper.png";
 import projImg12 from "../assets/img/atomicblog.png";
 import projImg13 from "../assets/img/Eat&split.png";
+import projImg14 from "../assets/img/leon.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 // import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -104,6 +105,12 @@ export const Projects = () => {
 			description: `A simple template made with Html & Css`,
 			imgUrl: projImg11,
 			projUrl: "https://kaspercsstemplate.netlify.app/",
+		},
+		{
+			title: "Leon",
+			description: `A simple template made with Html & Css`,
+			imgUrl: projImg14,
+			projUrl: "https://leoncss.netlify.app/",
 		},
 	];
 

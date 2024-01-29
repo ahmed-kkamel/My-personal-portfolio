@@ -441,6 +441,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx img {
 	height: 280px;
+	object-fit: cover;
 }
 .proj-imgbx::before {
 	content: "";
@@ -463,6 +464,39 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	transition: 0.5s ease-in-out;
 	opacity: 0;
 	width: 100%;
+}
+
+.project-url a {
+	position: relative;
+	text-decoration: none;
+	color: #fff;
+	text-transform: capitalize;
+	display: inline-flex;
+	margin-top: 8px;
+	padding: 10px 12px;
+	border-radius: 7px;
+	background-color: #aa367c96;
+	z-index: 100;
+}
+.project-url a::before {
+	content: "";
+	width: 83px;
+	height: 39px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #aa367c;
+	border-radius: 7px;
+	transform: scale(0);
+	transition: 0.3s ease-in-out;
+	z-index: -1;
+}
+.project-url a:hover::before {
+	transform: scale(1);
+}
+.project-url a:hover span {
+	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
+		hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 .proj-imgbx:hover .proj-txtx {
 	top: 50%;

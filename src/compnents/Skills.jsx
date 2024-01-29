@@ -70,8 +70,8 @@ const Skills = () => {
 								className="owl-carousel owl-theme skill-slider"
 								autoPlay={true}
 							>
-								{skills.map((skill) => (
-									<div className="item">
+								{skills.map((skill, index) => (
+									<div className="item" key={index}>
 										<img src={skill.imgUrl} alt={skill.title} />
 										<h5>{skill.title}</h5>
 									</div>
