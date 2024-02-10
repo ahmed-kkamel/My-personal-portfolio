@@ -14,6 +14,7 @@ import projImg11 from "../assets/img/kasper.png";
 import projImg12 from "../assets/img/atomicblog.png";
 import projImg13 from "../assets/img/Eat&split.png";
 import projImg14 from "../assets/img/leon.png";
+import projImg15 from "../assets/img/movix.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 // import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -26,6 +27,12 @@ export const Projects = () => {
 				"Minimart e-commerce, built with ReactJS, Redux for state management, and styled using Reactstrap. Authentication is powered by Firebase, offering a smooth checkout process after creating an account.",
 			imgUrl: projImg1,
 			projUrl: "https://minimart-deployed-version.netlify.app/home",
+		},
+		{
+			title: "Movix",
+			description: `Utilizing TMDB's public API to create a robust movie and TV show recommendation platform, delivering tailored content suggestions based on user preferences, providing an enhanced entertainment experience.`,
+			imgUrl: projImg1,
+			projUrl: "https://movix-eta.vercel.app/",
 		},
 		{
 			title: "Fast-Pizza Co",
