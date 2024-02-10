@@ -25,7 +25,7 @@ export const Projects = () => {
 			title: "Minimart ecommerce",
 			description:
 				"Minimart e-commerce, built with ReactJS, Redux for state management, and styled using Reactstrap. Authentication is powered by Firebase, offering a smooth checkout process after creating an account.",
-			imgUrl: projImg1,
+			imgUrl: projImg15,
 			projUrl: "https://minimart-deployed-version.netlify.app/home",
 		},
 		{
